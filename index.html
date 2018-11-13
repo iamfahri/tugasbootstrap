@@ -46,7 +46,7 @@
 	</table>
 	<br>
 	<div class="container">		
-	<form>
+	<form method="post" action="proses.php">
 		<div class="form">
 			<label for="nama">Nama Anda:</label>
 			<input type="text" class="form-control" >
@@ -59,7 +59,16 @@
 			<label for="tanggal">Tanggal Lahir:</label>
  			<input type="date" name="tanggal" >
  		</div>		
- 		<br>
+		<div class="form-group">
+			<label for="password"> Password: </label>
+			<input type="password" name="password" placeholder="Masukan Password">
+		<br>
+		</div>
+		<div class="form-group">
+			<label for=" konfirm password"> Konfirmasi Password: </label>
+			<input type="password" name="password2" placeholder="Konfirmasi Password">
+		<br>
+		</div>
 		<button type="submit" value="Masukan" onclick="cekNama(this.form)">Submit</button>
 	</form>
    </div>
